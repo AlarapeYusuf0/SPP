@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Performance Prediction System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Performance Prediction System</h2>
+
+ <label>Attendance (%)</label>
+<input type="number" id="attendance">
+
+<label>1st Term Exam Score</label>
+<input type="number" id="first_term">
+
+<label>2nd Term Exam Score</label>
+<input type="number" id="second_term">
+
+<label>Continuous Assessment Score</label>
+<input type="number" id="ca_score">
+
+<button onclick="predict()">Predict Performance!!!</button>
+<h3 id="result"></h3>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
